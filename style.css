@@ -1,0 +1,329 @@
+body {
+	font-family: 'Arbutus Slab', serif;
+}
+
+header {
+
+	background: linear-gradient(#653e11 0%, #d6c39f);
+	padding: 20px 0;
+}
+
+.caixa {
+	position: relative;
+	width: 940px;
+	margin: 0 auto;
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 0;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	font-weight: bold;
+	font-size: 25px;
+	text-decoration: none;
+}
+
+nav a:hover {
+	color: white;
+	text-decoration: underline;
+}
+
+main {
+	background: linear-gradient(#d6c39f, #FEFEFE, #d6c39f, #af986d, #653e11);
+}
+
+.produtos {
+	margin: 0 auto;
+	padding: 50px 0;
+}
+
+.produtos li {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border-color: #000000;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 10px;
+	background: #FEFEFE;
+}
+
+.produtos li:hover {
+	border-color: #653e11;
+}
+
+.produtos li:active {
+	border-color: #af986d;
+}
+
+.produtos li:hover h2 {
+	font-size: 34px;
+}
+
+.produtos h2 {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.produto-descricao {
+	font-size: 20px;
+}
+
+.produto-preco {
+	font-size: 35px;
+	font-weight: bold;
+	margin: 10px 0 0;
+}
+
+footer {
+	text-align: center;
+	background-color: rgb(61, 33, 0);
+	padding: 40px 0;
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+
+form {
+	margin: 0;
+	padding: 0 10px 0 20px;
+}
+
+
+form label,
+form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 30px 0;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: rgb(61, 33, 0);
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+.enviar:hover {
+	background: #af986d;
+	transform: scale(1.2);
+	transform: rotate(0deg);
+}
+
+table {
+	background: #FEFEFE;
+	margin: 15px 15px 15px 20px;
+}
+
+thead {
+	background: #af986d;
+	color: white;
+	font-weight: bold;
+
+}
+
+td,
+th {
+	border: 1px solid #af986d;
+	padding: 8px 15px;
+}
+
+.banner {
+	width: 100%;
+}
+
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+	color: rgba(0, 0, 0, 0.7);
+}
+
+.titulo-principal:first-letter {
+	font-weight: bold;
+}
+
+
+p:first-line {
+	font-style: italic;
+}
+
+.principal {
+	padding: 3em 0;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.principal p {
+	margin: 0 0 1em;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.utensilios {
+	width: 120px;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.sobre-barbearia {
+	margin: 0;
+	font-size: 17px;
+
+}
+
+.mapa {
+	padding: 3em 5em;
+
+}
+
+.mapa-conteudo {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+	font-size: 17px;
+}
+
+.beneficios {
+	padding: 3em 0;
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios {
+	width: 40%;
+	font-size: 20px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens {
+	line-height: 1.5;
+}
+
+.itens:first-child {
+	font-weight: bold;
+}
+
+.itens:before {
+	content: "♤";
+}
+
+.imagembeneficios {
+	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 15px 5px #653e11;
+}
+
+.imagembeneficios:hover {
+	opacity: 0.3;
+}
+
+.video {
+	width: 560px;
+	margin: 2em auto;
+}
+
+@media screen and (max-width: 480px) {
+
+	.caixa,
+	.principal,
+	.conteudo-beneficios,
+	.mapa-conteudo,
+	.video,
+	.enviar,
+	.form {
+		width: auto;
+	}
+
+	h1 {
+		text-align: center;
+	}
+
+	nav {
+		position: static;
+	}
+
+	.lista-beneficios,
+	.imagembeneficios {
+		width: 90%;
+		margin: 0 15px 0 15px;
+
+	}
+
+	.lista-beneficios,
+	.sobre-barbearia,
+	.utensilios,
+	.enviar {
+		padding: 15px;
+	}
+
+	.video {
+		padding: 0 15px 0 15px;
+	}
+
+	.table {
+		padding: 15px 15px 15px 20px;
+	}
+
+	.form {
+		margin: 0;
+	}
+
+	.enviar {
+		margin-bottom: 15px;
+	}
+
+	.produtos li {
+		margin: 10%;
+		width: 80%
+	}
+}
